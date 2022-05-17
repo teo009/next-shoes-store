@@ -48,7 +48,7 @@ const Header = () => {
 								`} 
 							onClick={() => toggleMenu()}
 						>
-							platzi@example.com
+							example@example.com
 						</li>
 						<li
 							className={styles['navbar-shopping-cart']}

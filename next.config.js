@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['api.lorem.space']
+    domains: ['api.lorem.space', 'www.google.com', 'pbs.twimg.com']
   },
 }
 

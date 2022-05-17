@@ -19,6 +19,9 @@ const ProductItem = ({ product }) => {
 			{
 				product.images[0] && <Image src={product.images[0]} alt={product.title} width={240} height={240} />
 			}
+			{
+				console.log(product.images[0])
+			}
 			<div className={styles['product-info']}>
 				<div>
 					<p>${product.price}</p>

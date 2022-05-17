@@ -19,9 +19,6 @@ const ProductItem = ({ product }) => {
 			{
 				product.images[0] && <Image src={product.images[0]} alt={product.title} width={240} height={240} />
 			}
-			{
-				console.log(product.images[0])
-			}
 			<div className={styles['product-info']}>
 				<div>
 					<p>${product.price}</p>
@@ -33,8 +30,8 @@ const ProductItem = ({ product }) => {
 				>
 					{ 
 						state.cart.includes(product) 
-						? <Image className={`${styles['disabled']} ${styles['add-to-cart-btn']}`} src={addedToCartImage} alt="added to cart" />  
-						: <Image className={`${styles['add-to-cart-btn']} ${styles['pointer']}`} src={addToCartImage} alt="add to cart" /> 
+						? <Image className={`${styles['disabled']} ${styles['add-to-cart-btn']}`} src={addedToCartImage} alt="added to cart" width={50} height={50}/>  
+						: <Image className={`${styles['add-to-cart-btn']} ${styles['pointer']}`} src={addToCartImage} alt="add to cart" width={50} height={50}/> 
 					}
 				</figure>
 			</div>
